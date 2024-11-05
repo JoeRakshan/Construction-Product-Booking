@@ -1,0 +1,464 @@
+/* menu.css */
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+body {
+    background-color: #1e1f26;
+    font-family: 'Joan', serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.btn {
+    /* Bootstrap styles for primary button */
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #cd8c38;
+    border-radius: 2rem;
+    color: #1e1f26;
+    transition: .3s;
+    
+    
+}
+
+.btn:hover {
+    /* Bootstrap styles for primary button hover */
+    background-color: #92601f;
+}
+
+/* Add necessary styles for .btn-l class */
+.btn-l {
+    width: 100%;
+    text-align: center;
+}
+
+/* top bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+.left-content,
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.left-content {
+    margin-left: -165px;
+    font-size: large;
+}
+
+.title {
+    margin-right: 3rem;
+    color: #cd8c38;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-right: 1rem;
+}
+
+.navigation li a:hover {
+    color: #cd8c38;
+}
+
+.active {
+    color: #cd8c38;
+}
+
+.filter,
+.cart,
+.help,
+.menu {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+.filter,
+.menu {
+    display: none;
+}
+
+.profile-img-box {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+/* main container */
+.main-container {
+    color: #adadad;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+/* sidebar */
+.sidebar {
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    backdrop-filter: blur(5px);
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+}
+
+.sidebar-groups {
+    margin-bottom: 1rem;
+}
+
+.sg-title {
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+input {
+    margin-bottom: .6rem;
+}
+
+input[type=checkbox]:checked {
+    accent-color: #cd8c38;
+}
+
+input[type=radio]:checked {
+    accent-color: #cd8c38;
+}
+
+label {
+    margin-left: .5rem;
+}
+
+
+
+.upcoming-title {
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    color: #cd8c38;
+    background-color: #1e1f26;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #cd8c38;
+    font-weight: 500;
+    overflow-x: hidden;
+
+}
+
+.buttons {
+    position: absolute;
+    bottom: 1rem;
+    left: 300px;
+}
+
+.btn-alt {
+    background-color: #1e1f26;
+    color: #cd8c38;
+    border: 1px solid #cd8c38;
+    margin-left: 1rem;
+}
+
+.btn-alt:hover {
+    color: #1e1f26;
+    background-color: #cd8c38;
+}
+
+/* current movies */
+.ajj-container {
+    padding-bottom: 3rem;
+}
+
+.current {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.5rem;
+}
+
+.current-ajj {
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    padding: 4rem;
+    border-radius: 2rem;
+    height: 370px;
+    margin-left: 25px;
+}
+
+.cm-img-box {
+    position: relative;
+    height: 150px;
+    width: auto;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: .2rem;
+}
+
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.price {
+    color: #cd8c38;
+}
+.card-custom {
+    background-color: #1e1f26;
+    border-color: #adadad;
+    border-radius: 2%;
+    color: #fff;
+}
+.custom-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* You can adjust the background color and opacity as per your requirement */
+    z-index: 9999; /* Make sure it has a higher z-index to overlay other elements */
+    padding: 20px; /* Add some padding to the content inside the container */
+    
+}
+.upcoming-img-box {
+    
+    top: 35%;
+    right: 100%;
+    left:70%;
+    transform: translate(-50%, -50%);
+   
+    position: relative;
+    height: 350px;
+    width: 220%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    
+}
+/* .upcoming-img-box img {
+   
+    position: absolute;
+    animation: crossfade 5s infinite alternate;
+  }
+.animate {
+    opacity: 1;
+  }
+  @keyframes crossfade {
+    0%, 100% {
+      opacity: 5;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  } */
+
+/* Center the buttons inside the container */
+.buttons {
+    text-align: center;
+}
+    .navbar {
+        background-color: #333;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #fff;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        color: #fff;
+        transition: color 0.3s; /* Smooth transition for text color change */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ff9900; /* Change text color on hover */
+    }
+
+    .profile-img-box {
+        margin-right: 10px;
+    }
+
+    .profile-img-box img {
+        border-radius: 50%;
+    }
+    .navbar-brand:hover {
+        color: #ff9900; /* Change text color on hover */
+    }
+    .right-container {
+        width: 20%; /* Adjust the width as needed */
+        float: right;
+        padding: 20px;
+        background-color: #26294b; /* Change to your desired background color */
+        position: relative;
+    top: 95px;
+
+    }
+    
+    /* Styles for the marquee */
+    .marquee-container {
+       
+         height: 200px; /* Adjust the height as needed */
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+
+    .marquee-text {
+        animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% { transform: translateY(100%); }
+        100% { transform: translateY(-100%); }
+        
+    }
+    .marquee {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        /* animation: marquee 10s linear infinite; */
+        color: whitesmoke;
+        
+    }
+
+    @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        
+      }
+  
+      /* Styling for the popup box */
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        width: 500px; /* Adjust the width as needed */
+      height: 600px; /* Adjust the height as needed */
+      padding: 20px;
+      }
+      #closePopup {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition */
+        margin-top: 20%;
+        margin-left: 38%;
+      }
+  
+      #closePopup:hover {
+        background-color: #081c54eb; /* Color change on hover */
+      }
+      #image{
+        height: 200px;
+        width: 200px;
+        margin-left: 25%;
+        
+
+      }
+      #closeCementPopup {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition */
+        margin-top: 20%;
+        margin-left: 38%;
+      }
+  
+      #closePopup:hover {
+        background-color: #081c54eb; /* Color change on hover */
+      }
+      #closeSteelRodsPopup {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition */
+        margin-top: 20%;
+        margin-left: 38%;
+      }
+  
+      #closeSteelRodsPopup:hover {
+        background-color: #081c54eb; /* Color change on hover */
+      }
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    .popup img {
+        max-width: 100%;
+        max-height: 98%;
+        left: 50%;
+    }
+    
+
+    @media (max-width: 768px) {
+        body {
+            overflow-x: hidden;
+        }
+    }
+    

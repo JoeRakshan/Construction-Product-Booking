@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESCRIPTION</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            animation: colorChange 10s infinite alternate; /* Animation for background color change */
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: #3b3b3b;
+            }
+            50% {
+                background-color: #4b4d4e;
+            }
+            100% {
+                background-color: #9f9a9a;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in; /* Animation for container fade in */
+            position: relative; /* Added to position the back button */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            animation: zoomIn 1s ease-in-out; /* Animation for image zoom in */
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            img {
+                margin: 10px auto;
+            }
+        }
+
+        /* Next Button */
+        .next-button {
+            display: block;
+            width: 100px;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .next-button:hover {
+            background-color: #c82333;
+        }
+
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 8px 12px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DESCRIPTION</h1>
+    <p>Welcome to our hand-made bricks project! Below are some instructions to get started:</p>
+    <p>1. We specialize in crafting hand-made bricks with the highest quality.</p>
+    <p>2. Our bricks are meticulously crafted using traditional techniques.</p>
+    <p>3. Each brick is carefully inspected to ensure superior craftsmanship.</p>
+    <img src="bricksdet.webp" alt="Brick Image 1">
+    <p>4. Our bricks are known for their durability and timeless appeal.</p>
+    <p>5. Join us in our mission to provide top-quality hand-made bricks for your construction needs.</p>
+    <img src="bricksdet2.webp" alt="Brick Image 2">
+    <p>6. Whether you're building a rustic farmhouse or a modern structure, our hand-made bricks add character and charm to any project.</p>
+    <p>7. Contact us today to place an order or inquire about our hand-made bricks!</p>
+        <!-- Back Button -->
+        <a class="back-button" href="menu.html" >Back</a>
+    </div>
+</body>
+</html>

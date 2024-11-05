@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="menu.css">
+    
+    
+
+    <title>Booking</title>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="project1.php">Bricks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project2.php">Cement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project3.php">Steel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="license.html">License</a>
+              </li>
+              
+                
+            </ul>
+        </div>
+    </div>
+    
+</nav>
+<br><br><br>
+<center><h1 class="marquee">AJJ CONSTRUCTION</h1></center>
+
+
+    <br><br><br>
+
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-lg-6 order-2 order-lg-1">
+          <div class="card" style="width: 200px;top: 5%;">
+              <div class="card-body">
+                  <div class="card-title" style="background-color: #02386e; text-align: center;">
+                      <span id="spanDate" style="color: #fefefe; font-weight: bold;"></span>
+                      <script type="text/javascript">
+                          var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+                              'August', 'September', 'October', 'November', 'December'];
+                          var tomorrow = new Date();
+                          document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate() + ", " + tomorrow.getFullYear();
+                      </script>
+                  </div>
+                  <div class="card-body">
+                      <div class="marquee-container">
+                          <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                              <center>  <p>Welcome To AJJ Construction.</p>
+                              <p>Finest For Your Trust.</p>
+                              <p>Strongest Ability</p>
+                              <p><img src="logo.jpg" alt="AJJ CONSTRUCTION" width="120"></p></center>
+                          </marquee>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="upcoming-img-box">
+          <img id="slideshow-image" src="1692104467652.jpg" width="800" height="500" alt">
+          
+          <div class="buttons">
+            
+            <a href="video.html" class="btn btn-secondary">Play video</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <script>
+        var imageSources = [
+        "image1.jpg",
+        "image3.jpg",
+        "image4.jpg"
+        
+  
+  
+        ];
+      
+        var currentImageIndex = 0;
+var imageElement = document.getElementById("slideshow-image");
+
+function changeImage() {
+  imageElement.classList.remove("animate");
+  setTimeout(function () {
+    imageElement.src = imageSources[currentImageIndex];
+    imageElement.classList.add("animate"); 
+    currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+  }, 50); 
+}
+
+
+setInterval(changeImage, 2500);
+      </script>
+
+
+
+   <br>
+    <div class="container"style="align: center;">
+        <div class="row">
+          <div class="col-md-4"style="padding: 20px;">
+            <div class="card card-custom" style="width: 18rem;">
+              <img src="image2.jpg",
+              style="height: 200px;  width :285px;"
+               class="card-img-top" alt="Card 1 Image">
+              <div class="card-body" >
+                <h5 class="card-title">BRICKS</h5>
+                <a href="project1.php" class="btn btn-primary">BOOK NOW</a>
+                <a id="showPopup" href="bricksdet.html" class="btn btn-primary">DETAILS</a>
+                
+                  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"style="padding: 20px;">
+            <div class="card card-custom" style="width: 18rem;">
+              <img src="Cement1.jpg" style="height: 200px;width :285px;" class="card-img-top" alt="Card 2 Image">
+              <div class="card-body">
+                <h5 class="card-title">CEMENTS</h5>
+                <a href="project2.php" class="btn btn-primary">BOOK NOW</a>
+                <a id="showCementPopup" href="cementsdet.html" class="btn btn-primary">DETAILS</a>
+                
+                
+              </div>
+            </div>
+          </div>
+
+             
+                
+                
+
+
+          <div class="col-md-4" style="padding: 20px;">
+            <div class="card card-custom" style="width: 18rem;">
+              <img src="rods.jpg" style="height: 200px;width :285px" class="card-img-top" alt="Card 3 Image">
+              <div class="card-body">
+                <h5 class="card-title">STEELS</h5>
+                <a href="project3.php" class="btn btn-primary">BOOK NOW</a>
+                <a id="showSteelRodsPopup" href="steeldet.html" class="btn btn-primary">DETAILS</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+     
+
+      
+      
+    <br><br><br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var overlay = document.getElementById("overlay");
+    var popup = document.getElementById("popup");
+
+    var showButton = document.getElementById("showPopup");
+
+    showButton.addEventListener("click", function() {
+      overlay.style.display = "block";
+      popup.style.display = "block";
+    });
+
+    var closeButton = document.getElementById("closePopup");
+    closeButton.addEventListener("click", function() {
+      overlay.style.display = "none";
+      popup.style.display = "none";
+      });
+      var cementOverlay = document.getElementById("cementOverlay");
+  var cementPopup = document.getElementById("cementPopup");
+
+  var showCementButton = document.getElementById("showCementPopup");
+
+  showCementButton.addEventListener("click", function() {
+    cementOverlay.style.display = "block";
+    cementPopup.style.display = "block";
+  });
+
+  var closeCementButton = document.getElementById("closeCementPopup");
+  closeCementButton.addEventListener("click", function() {
+    cementOverlay.style.display = "none";
+    cementPopup.style.display = "none";
+  });
+  var steelRodsOverlay = document.getElementById("steelRodsOverlay");
+  var steelRodsPopup = document.getElementById("steelRodsPopup");
+
+  var showSteelRodsButton = document.getElementById("showSteelRodsPopup");
+
+  showSteelRodsButton.addEventListener("click", function() {
+    steelRodsOverlay.style.display = "block";
+    steelRodsPopup.style.display = "block";
+  });
+
+  var closeSteelRodsButton = document.getElementById("closeSteelRodsPopup");
+  closeSteelRodsButton.addEventListener("click", function() {
+    steelRodsOverlay.style.display = "none";
+    steelRodsPopup.style.display = "none";
+  });
+  var licenseOverlay = document.getElementById("licenseOverlay");
+    var licensePopup = document.getElementById("License");
+
+    var showLicenseButton = document.getElementById("showLicensePopup");
+    showLicenseButton.addEventListener("click", function() {
+        licenseOverlay.style.display = "block";
+        licensePopup.style.display = "block";
+    });
+
+    var closeLicenseButton = document.getElementById("closeLicensePopup");
+    closeLicenseButton.addEventListener("click", function() {
+        licenseOverlay.style.display = "none";
+        licensePopup.style.display = "none";
+    });
+
+    </script>
+  
+    
+  
+  </body>
+
+</html>
